@@ -1,12 +1,79 @@
+
 body {
-  background-color: lightcyan;
+  background-color: steelblue;
 }
 h1 {
-  color:darkgray;
+  color: black;
   text-align: center;
 }
+
 
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
+}
+
+ol{
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  background-color: whitesmoke;
+}
+
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+  color: black; 
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color:gainsboro ;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.header {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+.item3 {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 2;
+}
+
+#meat{
+  background-color: lightcoral;
+}
+
+#veg{
+  background-color: lightgreen;
+}
+
+#dairy{
+  background-color: lightyellow;
+}
+
+.footer {
+  grid-column: 1 / span 3;
+  grid-row: 6;
 }
