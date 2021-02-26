@@ -21,7 +21,7 @@ ul {
   margin: 0;
   padding: 0;
   width: 100px;
-  background-color: whitesmoke;
+  background-color: transparent;
 }
 
 
@@ -33,14 +33,14 @@ li a {
 }
 
 li a:hover {
-  background-color: white;
+  background-color: steelblue;
   color: black; 
 }
 
 .grid-container {
   display: grid;
   grid-gap: 10px;
-  background-color:gainsboro ;
+  background-color: transparent;
   padding: 10px;
 }
 
@@ -50,6 +50,7 @@ li a:hover {
   padding: 20px;
   font-size: 30px;
 }
+
 
 .header {
   grid-column: 1 / span 3;

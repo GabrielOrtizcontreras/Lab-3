@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>CPSC 2125 Lab 2</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="grid-container">
+
+	<div class="grid-item header">
+		<h3 style="text-align:center;">CPSC 2125 Lab 2</h3>
+		</div>
+	<div class="grid-item nav">
+		<ul>
+			<li><a href="lab1.html"> Lab-1 </a> </li>
+			<li><a href="lab2.html"> Lab-2 </a> </li>
+			<li><a href="lab3.html"> Lab-3 </a> </li>
+			<li><a href="lab4.html"> Lab-4 </a> </li>
+			<li><a href="lab5.html"> Lab-5 </a> </li>
+		</ul>
+		</div>
+
+	<div class="grid-item item3">
+		<h4 style="text-align:center;"> Basic Form for Lab-5 </h4>
+		</div>
+	<div class="grid-item item4">
+		<h3>Required information is marked with an asterisk (*)</h3>
+
+	    <form action="https://www.youtube.com/watch?v=FBFruf9gnZ8&list=PLeOTBrUgeayw009mqU8urXd9MJsLvX8de&index=17" method="post">
+
+		  <label for="fname">* First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">* Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe">
+	
+      <p><strong> What is your Email Address? </strong></p>
+      <label for="email"> Email Address </label>
+      <input type="email" id="email" name="email">
+
+      <p><strong> * Select one of the following: </strong> </p>
+
+      <select id="State">
+      <option>AL</option>
+      <option>FL</option>
+      <option>GA</option>
+      </select>
+
+
+      <p><strong>What is your marital status?</strong></p>
+
+      <input type="radio" id="single" name="maritalstatus" value="single">
+      <label for="single">Single</label><br>
+      <input type="radio" id="married" name="maritalstatus" value="married">
+      <label for="married">Married</label><br>
+      <input type="radio" id="divorced" name="maritalstatus" value="divorced">
+      <label for="divorced">Divorced</label>
+
+      <p><strong>Skills</strong></p>
+
+      <input type="checkbox" id="skill1" name="skill1" value="Python">
+      <label for="skill1"> Python </label><br>
+      <input type="checkbox" id="skill2" name="skill2" value="Java">
+      <label for="skill2"> Java </label><br>
+      <input type="checkbox" id="skill3" name="skill3" value="HTML">
+      <label for="skill3"> HTML </label><br><br>
+
+      <p><strong> If you have any further questions or anything to add enter them below : </strong> </p>
+    <br>
+    <input type="text" value="Comments" size="40">
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset">
+
+     </form>
+
+    </div>
+
+  <div class="grid-item footer">
+    <p style="text-align:center;"><small> Gabriel Ortizcontreras | Last Updated <span id="demo"></span>.</small></p>
+
+  <script>
+  document.getElementById("demo").innerHTML = document.lastModified;
+  </script></div>
+  </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -9,13 +9,14 @@
   <body>
 <div class="grid-container"> 
 
-    <div class="grid-item header"><h3>CPSC 2125 Lab 3</h3></div>
+    <div class="grid-item header"><h3 style="text-align:center;">CPSC 2125 Lab 3</h3></div>
     <div class="grid-item nav">
       <ul>
       <li><a href="lab1.html"> Lab-1 </a> </li>
       <li><a href="lab2.html"> Lab-2 </a> </li>
       <li><a href="lab3.html"> Lab-3 </a> </li>
       <li><a href="lab4.html"> Lab-4 </a> </li>
+      <li><a href="lab5.html"> Lab-5 </a> </li>
       </ul>
     </div>
 
@@ -26,7 +27,15 @@
     <div class="grid-item item6">
     </div>
     <div class="grid-item footer">
-    <h4 style="text-align:center;"> <small> Gabriel Ortizcontreras  </small> </h4></div>
+    <p style="text-align:center;"><small> Gabriel Ortizcontreras | Last Updated <span id="demo"></span>.</small></p>
+
+
+<script>
+document.getElementById("demo").innerHTML = document.lastModified;
+</script></div>
+
+
+
 </div>
 
 
