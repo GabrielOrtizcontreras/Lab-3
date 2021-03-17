@@ -13,29 +13,41 @@ p {
   font-size: 20px;
 }
 
-ol{
-}
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 100px;
+  overflow: hidden;
   background-color: transparent;
 }
 
+.button {
+  background-color: tomato;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+li {
+  display: inline;
+}
 
 li a {
   display: inline-block;
   color: black;
-  padding: 8px 16px;
-  text-decoration: none;
 }
 
 li a:hover {
   background-color: steelblue;
   color: black; 
 }
+
 
 .grid-container {
   display: grid;
@@ -55,26 +67,35 @@ li a:hover {
 .header {
   grid-column: 1 / span 3;
   grid-row: 1;
+  background-color: crimson;
 }
 
-.item3 {
+.item4 {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  background-color: dodgerblue;
+}
+
+.aside {
+  grid-column: 3;
+  grid-row: 3 / span 2;
+  background-color: gold;
+}
+
+.article{
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  background-color: darkred;
+}
+
+.nav{
   grid-column: 1 / span 3;
-  grid-row: 2 / span 2;
-}
-
-#meat{
-  background-color: lightcoral;
-}
-
-#veg{
-  background-color: lightgreen;
-}
-
-#dairy{
-  background-color: lightyellow;
+  grid-row: 2;
+  background-color: turquoise;
 }
 
 .footer {
   grid-column: 1 / span 3;
   grid-row: 6;
+  background-color: green;
 }
